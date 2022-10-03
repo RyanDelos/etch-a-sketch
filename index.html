@@ -6,10 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Etch-a-Sketch</title>
 
-    <link href="css/general.css" />
-    <link href="css/queries.css" />
-    <link href="css/style.css" />
+    <!-- CSS FILES -->
+    <link href="css/general.css" rel="stylesheet" />
+    <link href="css/queries.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
 
+    <!-- GOOGLE FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- JS -->
     <script defer src="script.js"></script>
   </head>
   <body>
@@ -19,10 +29,8 @@
       </div>
     </header>
     <main id="main">
-      <div class="container">
-        <div class="grid"></div>
-        <div class="tools"></div>
-      </div>
+      <div><button class="btn" type="reset">New Grid</button></div>
+      <div id="grid" class="grid-container"></div>
     </main>
 
     <footer>
