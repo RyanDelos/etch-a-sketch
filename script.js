@@ -4,6 +4,9 @@
 const DEFAULT_SIZE = 16;
 const button = document.querySelector('.btn');
 const grid = document.querySelector('.grid-container');
+const date = new Date();
+let newYear = date.getFullYear();
+let currentYear = document.querySelector('.year');
 
 // makeRows function creates 16x16 grid
 function makeGrid(size) {
@@ -19,7 +22,7 @@ function makeGrid(size) {
 makeGrid(DEFAULT_SIZE);
 
 function clearGrid() {
-  grid.innerHTML = '';
+  grid.innerText = '';
 }
 // hover effect
 function hover() {
@@ -42,3 +45,5 @@ button.addEventListener('click', function () {
     alert(`Number has to be between 1 through 64`);
   }
 });
+
+currentYear.innerText = newYear;
