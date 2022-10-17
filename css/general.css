@@ -53,22 +53,22 @@ gap: 2.4 ,9.6rem
 padding-left: 9.6rem
 */
 
-* {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
 html {
-  position: relative;
   overflow-x: hidden;
+  position: relative;
+  min-height: 100%;
 }
 
 body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
   font-family: 'Kalam', cursive;
-  height: 100vh;
+  /* position: relative; */
+  margin-bottom: 100px;
 }
